@@ -1,0 +1,28 @@
+.onlogout {
+    
+ 
+    margin-top: 10px;
+   
+    display: block;
+    padding: 8px 12px;
+    text-decoration: none;
+   border: none;
+    color: red;
+    border-radius: 6px;
+    font-weight: 500;
+    background: transparent;
+    font-size: 18px;
+    text-align: left;
+    width: 100%;
+    cursor: pointer;
+    transition: all 0.2s;
+
+  }
+
+
+
+  .onlogout:hover {
+    background-color:  #f0f0f0;
+    color: #007bff;
+    
+  }

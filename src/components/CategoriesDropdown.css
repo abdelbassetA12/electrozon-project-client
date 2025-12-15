@@ -1,0 +1,388 @@
+
+
+
+/* الشريط العلوي */
+.categories-navbar {
+  background: #0d47a1;
+  padding: 14px 0;
+  display: flex;
+  justify-content: center;
+  box-shadow: 0 2px 12px rgba(0,0,0,0.35);
+  position: relative;
+  z-index: 50;
+  font-family: "Poppins", sans-serif;
+}
+
+
+/* القائمة الرئيسية */
+.categories-main {
+  display: flex;
+  gap: 40px;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.main-category {
+  position: relative;
+  color: #fff;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: 500;
+  display: flex;
+  align-items: center;
+   
+  user-select: none;
+  border-radius: 8px;
+  transition: 0.2s ease;
+}
+
+.main-category:hover {
+  background: rgba(255,255,255,0.20);
+}
+
+.main-category-title {
+
+  padding: 8px 14px;
+}
+
+/* زر العنوان */
+.main-category-btn {
+  display: flex;
+  align-items: center;
+ 
+
+}
+
+
+/* القائمة المنسدلة الرئيسية */
+.main-dropdown {
+  position: absolute;
+  top: 48px;
+  left: 0;
+  background: #ffffff;
+  min-width: 300px;
+  border-radius: 12px;
+  padding: 12px 0;
+  box-shadow: 0 12px 30px rgba(0,0,0,0.18);
+  z-index: 999;
+  opacity: 0;
+  pointer-events: none;
+  transform: translateY(12px);
+  transition: 0.28s ease;
+}
+
+/* ❗ اللون الصحيح داخل القوائم الفرعية */
+.main-dropdown,
+.dropdown-btn,
+.dropdown-level {
+  color: #333 !important;
+  font-weight: 500;
+}
+
+.main-category.open > .main-dropdown {
+  opacity: 1;
+  transform: translateY(0);
+  pointer-events: auto;
+}
+
+/* العناصر الداخلية */
+.dropdown-level {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.dropdown-item {
+  position: relative;
+}
+
+/* زر العناصر الداخلية */
+.dropdown-btn {
+  padding: 12px 18px;
+  font-size: 15px;
+  display: flex;
+  justify-content: space-between;
+  cursor: pointer;
+  transition: background 0.22s ease;
+  background: #fff;
+}
+
+.dropdown-btn:hover {
+  background: #e3f2fd;
+}
+
+/* القوائم الفرعية */
+.dropdown-children {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  background: #ffffff;
+  
+  min-width: 260px;
+  border-radius: 12px;
+  padding: 10px 0;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.18);
+  opacity: 0;
+  transform: translateX(14px);
+  pointer-events: none;
+  transition: 0.28s ease;
+  z-index: 999;
+}
+
+/* ظهور القوائم الفرعية */
+.dropdown-item.open > .dropdown-children {
+  opacity: 1;
+  transform: translateX(0);
+  pointer-events: auto;
+
+}
+
+/* السهم */
+.arrow {
+  font-size: 13px;
+  transition: 0.25s ease;
+  opacity: 0.7;
+  padding-right: 5px;
+  padding-left: 5px;
+}
+
+.main-category.open .arrow,
+.dropdown-item.open .arrow {
+  transform: rotate(180deg);
+  opacity: 1;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* إخفاء النافبار عند السحب لأعلى */
+.categories-navbar {
+  position: sticky;
+  top: 90px;
+  transition: transform 0.5s ease;
+  z-index: 999;
+}
+
+/* عند الإخفاء */
+.categories-navbar.hide {
+  transform: translateY(-300%);
+ 
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.mobile-toggle {
+  display: none;
+}
+/* ============================
+   🎯 1) وضع الهاتف (أقل من 768px)
+   ============================ */
+
+
+   /* ============================
+   📱 MOBILE ONLY (≤768px)
+   ============================ */
+@media (max-width: 768px) {
+  .main-category-btn{
+    width: 100%;
+    padding: 16px ;
+    margin: 0 5px;
+    
+  }
+  .main-category-btn:hover {
+  background: rgba(255,255,255,0.20);
+  border-radius: 8px;
+}
+    .mobile-toggle {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    color: #fff;
+    cursor: pointer;
+    font-size: 18px;
+    font-weight: 600;
+    margin: 5px 0 5px;
+  }
+
+  .mobile-toggle .rotate {
+    transform: rotate(180deg);
+    transition: 0.3s ease;
+  }
+  
+  .categories-navbar {
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    top: 90px;
+    width: 100%;
+    padding: 10px 0;
+    background: #0d47a1;
+    box-shadow: 0 2px 12px rgba(0,0,0,0.25);
+ 
+  }
+
+  /* القائمة تتحول إلى عمودية */
+
+  .categories-main {
+    display: none;
+    flex-direction: column;
+    justify-items: center;
+    align-items: center;
+    width: 100%;
+    gap: 0px;
+   
+    border-radius: 8px;
+    overflow: hidden;
+  }
+
+  .main-category {
+     margin: 0 20px;
+    width: 100%;
+    padding:0;
+   
+    border-bottom: 1px solid rgba(255,255,255,0.2);
+  }
+  .main-category:hover {
+  background: none;
+}
+
+  /* القوائم المنسدلة تكون أسفل العنصر وليس يسار */
+  .main-dropdown {
+      position: absolute !important;
+    top: 50px;
+    right: 0;
+    min-width: 50%;
+    
+    
+    background: none;
+    border-radius: 0;
+    box-shadow: none;
+    
+    transform: translateY(0) !important;
+  
+
+
+
+   
+  }
+ 
+
+  /* الساب-كاتيغوري */
+  .dropdown-children {
+    position: relative !important;
+    top: 50%;
+    left: 0;
+    border-radius: 0;
+    padding: 0;
+    margin-top: 5px;
+   
+    min-width: 100%;
+    transform: translateX(0) !important;
+    box-shadow: none;
+  }
+
+
+  .dropdown-btn {
+    padding: 14px 20px;
+
+
+   
+  }
+
+  .dropdown-btn:hover {
+    background: #e3f2fd;
+  }
+
+  /* السهم على اليمين */
+  .arrow {
+    margin-left: auto;
+  }
+
+  /* تحسين المسافات */
+  .main-category-title {
+    font-size: 17px;
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
