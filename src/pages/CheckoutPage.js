@@ -165,97 +165,155 @@ const sendOrder = async () => {
   );
 }
 
+
 const styles = {
   container: {
-    maxWidth: 600,
-    margin: '30px auto',
-    padding: 20,
-    backgroundColor: '#fff',
-    borderRadius: 12,
-    boxShadow: '0 4px 12px rgba(0,0,0,0.05)',
+    maxWidth: 720,
+    margin: '60px auto',
+    padding: '30px 28px',
+    background: 'linear-gradient(180deg, #ffffff, #f9fafb)',
+    borderRadius: 20,
+    boxShadow: '0 20px 50px rgba(0,0,0,0.08)',
+    fontFamily: "'Segoe UI', Tahoma, sans-serif",
   },
+
   title: {
     textAlign: 'center',
-    marginBottom: 20,
+    fontSize: 28,
+    fontWeight: 700,
+    marginBottom: 30,
+    color: '#1f2937',
   },
+
   subtitle: {
-    marginTop: 30,
-    marginBottom: 10,
+    fontSize: 20,
+    fontWeight: 600,
+    marginTop: 35,
+    marginBottom: 15,
+    color: '#111827',
+    borderLeft: '4px solid #10b981',
+    paddingLeft: 10,
   },
+
   productsList: {
-    border: '1px solid #eee',
-    borderRadius: 8,
-    padding: 10,
+    backgroundColor: '#f9fafb',
+    borderRadius: 14,
+    padding: 16,
+    border: '1px solid #e5e7eb',
   },
+
   productItem: {
-    borderBottom: '1px solid #ddd',
-    padding: '10px 0',
+    display: 'flex',
+    justifyContent: 'space-between',
+    alignItems: 'center',
+    padding: '14px 0',
+    borderBottom: '1px dashed #e5e7eb',
   },
+
   productName: {
+    fontSize: 15,
+    fontWeight: 600,
+    color: '#1f2937',
     margin: 0,
   },
+
   productPrice: {
+    fontSize: 14,
+    color: '#0d47a1',
+      
     margin: 0,
-    color: '#27ae60',
   },
+
   total: {
     textAlign: 'right',
-    marginTop: 10,
-    fontSize: 16,
+    marginTop: 18,
+    fontSize: 18,
+    fontWeight: 700,
+    color: '#111827',
   },
+
   form: {
-    marginTop: 20,
-    display: 'flex',
-    flexDirection: 'column',
-    gap: 10,
+    marginTop: 25,
+    display: 'grid',
+    gridTemplateColumns: ' 1fr',
+    gap: 14,
   },
+
   input: {
-    padding: 10,
-    borderRadius: 6,
-    border: '1px solid #ccc',
+    padding: '14px 12px',
+    borderRadius: 10,
+    border: '1px solid #d1d5db',
     fontSize: 15,
+    outline: 'none',
+    transition: '0.3s',
   },
+
   submitBtn: {
-    backgroundColor: '#27ae60',
+    gridColumn: '1 / -1',
+    marginTop: 10,
+  
+     backgroundColor: " #0d47a1",
     color: '#fff',
-    padding: 12,
+    padding: 16,
     border: 'none',
-    borderRadius: 6,
-    fontSize: 16,
+    borderRadius: 14,
+    fontSize: 17,
+    fontWeight: 600,
     cursor: 'pointer',
+    boxShadow: '0 10px 25px rgba(16,185,129,0.35)',
+    transition: '0.3s',
   },
+
   registerBox: {
-    marginTop: 30,
-    padding: 20,
-    border: '1px solid #eee',
-    borderRadius: 8,
-    backgroundColor: '#fafafa',
+    marginTop: 35,
+    padding: 24,
+    borderRadius: 18,
+    background: 'linear-gradient(180deg, #f9fafb, #ffffff)',
+    border: '1px solid #e5e7eb',
     textAlign: 'center',
+    boxShadow: '0 10px 30px rgba(0,0,0,0.06)',
   },
+
   registerTitle: {
-    marginBottom: 10,
+    fontSize: 18,
+    fontWeight: 600,
+    marginBottom: 14,
+    color: '#1f2937',
   },
+
   registerBtn: {
-    backgroundColor: '#2980b9',
+    background: 'linear-gradient(135deg, #2563eb, #1d4ed8)',
     color: '#fff',
-    padding: 10,
+    padding: 14,
     border: 'none',
-    borderRadius: 6,
+    borderRadius: 12,
     cursor: 'pointer',
-    marginTop: 10,
+    marginTop: 12,
     width: '100%',
+    fontSize: 15,
+    fontWeight: 600,
+    boxShadow: '0 8px 22px rgba(37,99,235,0.35)',
+    transition: '0.3s',
   },
+
   skipBtn: {
-    backgroundColor: '#ddd',
-    color: '#333',
-    padding: 10,
-    border: 'none',
-    borderRadius: 6,
+    backgroundColor: '#f3f4f6',
+    color: '#374151',
+    padding: 14,
+    border: '1px solid #d1d5db',
+    borderRadius: 12,
     cursor: 'pointer',
-    marginTop: 10,
+    marginTop: 12,
     width: '100%',
+    fontSize: 14,
+    fontWeight: 500,
+    transition: '0.3s',
   },
 };
+
+
+
+
 
 export default CheckoutPage;
 
