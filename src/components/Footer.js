@@ -1,6 +1,6 @@
 import React from 'react';
 import { NavLink } from 'react-router-dom';
-import { FaLinkedin, FaGithub, FaInstagram, FaYoutube } from "react-icons/fa";
+import { FaLinkedin, FaInstagram, FaFacebook } from "react-icons/fa";
 import { SiUpwork } from "react-icons/si";
 
 const Footer = ({ user }) => {
@@ -60,9 +60,10 @@ const Footer = ({ user }) => {
         <div style={styles.column}>
           <h4 style={styles.heading}> Site Links </h4>
           <NavLink to="/"   className="footer-link">Home</NavLink>
+          
+          <NavLink to="/offers"  className="footer-link">offers</NavLink>
+          <NavLink to="/product"  className="footer-link">Product</NavLink>
           <NavLink to="/contact"  className="footer-link">Contact Us</NavLink>
-          <NavLink to="/resume"  className="footer-link">Resume</NavLink>
-          <NavLink to="/projects-list"  className="footer-link">Projects</NavLink>
        
         </div>
 
@@ -70,7 +71,8 @@ const Footer = ({ user }) => {
         <div style={styles.column}>
           <h4 style={styles.heading}>Information</h4>
           <p style={{ color: '#d1d5db', lineHeight: '1.6' }}>
-           AB Portfolio — All rights reserved. Here you can find the latest projects and digital services in a professional and seamless way.
+         
+           ElectroZone Store — All rights reserved. Explore a wide selection of quality products, carefully curated for a seamless shopping experience.
           </p>
 
 
@@ -114,22 +116,7 @@ const Footer = ({ user }) => {
             <FaLinkedin />
           </a>
         
-          <a
-            href="https://github.com/abdelbassetA12"
-            target="_blank"
-            rel="noreferrer"
-            style={{ color: "#444", transition: "all 0.3s ease" }}
-            onMouseEnter={(e) => {
-              e.currentTarget.style.color = "#000";
-              e.currentTarget.style.transform = "scale(1.2)";
-            }}
-            onMouseLeave={(e) => {
-              e.currentTarget.style.color = "#444";
-              e.currentTarget.style.transform = "scale(1)";
-            }}
-          >
-            <FaGithub />
-          </a>
+          
         
           <a
             href="https://www.instagram.com/abdelbasset_eh?igsh=MWc5Z3Azbnh3ZnhodA=="
@@ -148,40 +135,25 @@ const Footer = ({ user }) => {
             <FaInstagram />
           </a>
         
-          <a
-            href="https://www.youtube.com/@abdelbassetelhajiri"
-            target="_blank"
-            rel="noreferrer"
-            style={{ color: "#444", transition: "all 0.3s ease" }}
-            onMouseEnter={(e) => {
-              e.currentTarget.style.color = "#ff0707ff";
-              e.currentTarget.style.transform = "scale(1.2)";
-            }}
-            onMouseLeave={(e) => {
-              e.currentTarget.style.color = "#444";
-              e.currentTarget.style.transform = "scale(1)";
-            }}
-          >
-            <FaYoutube />
-          </a>
+          
          
             
           <a
-            href="https://www.upwork.com/freelancers/~016eb755e81c8f3902"
-            target="_blank"
-            rel="noreferrer"
-            style={{ color: "#444", transition: "all 0.3s ease" }}
-            onMouseEnter={(e) => {
-              e.currentTarget.style.color = "#6fda44";
-              e.currentTarget.style.transform = "scale(1.2)";
-            }}
-            onMouseLeave={(e) => {
-              e.currentTarget.style.color = "#444";
-              e.currentTarget.style.transform = "scale(1)";
-            }}
-          >
-            <SiUpwork />
-          </a>
+                         href="https://www.facebook.com"
+                         target="_blank"
+                         rel="noreferrer"
+                         style={{ color: "#444", transition: "all 0.3s ease" }}
+                         onMouseEnter={(e) => {
+                           e.currentTarget.style.color = "#0077b5";
+                           e.currentTarget.style.transform = "scale(1.2)";
+                         }}
+                         onMouseLeave={(e) => {
+                           e.currentTarget.style.color = "#444";
+                           e.currentTarget.style.transform = "scale(1)";
+                         }}
+                       >
+                         <FaFacebook />
+                       </a>
         </div>
 
     
@@ -193,7 +165,8 @@ const Footer = ({ user }) => {
       </div>
 
       <div style={styles.bottom}>
-        © {new Date().getFullYear()} All Rights Reserved — AB Portfolio
+        © {new Date().getFullYear()} All Rights Reserved — ElectroZone
+
       </div>
 
       <style>{`

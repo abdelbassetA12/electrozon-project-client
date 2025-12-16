@@ -127,12 +127,36 @@ const Navbar = ({ user, onLogout }) => {
 
   return (
     <nav style={styles.nav}>
-      <NavLink to="/" style={styles.logo} onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave}>ElectroZone </NavLink>
+      <div className="menu-toggle" style={styles.cartIconContainer}>
+                      <FaShoppingCart
+                        onClick={() => setShowCart(true)}
+                        style={{ fontSize: 20, cursor: 'pointer' }}
+                        title="السلة"
+                      />
+                      {cartItems.length > 0 && (
+                        <span style={styles.cartBadge}>{cartItems.length}</span>
+                      )}
+                    </div>
 
+                  
+      <NavLink to="/" style={styles.logo} onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave}>ElectroZone </NavLink>
+     
+
+
+
+        <FaSearch className="menu-toggle"
+            onClick={() => setShowSearchOverlay(true)}
+            style={{ fontSize: 20, cursor: 'pointer' }}
+            title="بحث"
+          />
+         
       {/* زر الهامبرغر للموبايل */}
       <div className="menu-toggle" onClick={() => setMenuOpen(prev => !prev)}>
         {menuOpen ? <FaTimes size={20} /> : <FaBars size={20} />}
       </div>
+
+      
+       
 
       {/* حاوية الروابط - تُستخدم كقائمة جانبية على الموبايل */}
       <div ref={navLinksRef} className={`nav-links ${menuOpen ? 'open' : ''}`} style={{ display: 'flex', alignItems: 'center', gap: '20px', flex: 1, justifyContent: 'center' }}>

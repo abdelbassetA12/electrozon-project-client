@@ -105,7 +105,7 @@
     padding: 25px 20px;
     transition: inset-inline-start 0.3s ease-in-out;
     box-shadow: 2px 0 10px rgba(0,0,0,0.15);
-    z-index: 9999;
+    z-index: 99999999;
   }
 
   .nav-links.open {

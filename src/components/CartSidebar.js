@@ -113,7 +113,7 @@ const styles = {
     boxShadow: "-3px 0 15px rgba(0,0,0,0.12)",
     padding: 20,
     transition: "right 0.35s cubic-bezier(0.25, 1, 0.5, 1)",
-    zIndex: 9999,
+    zIndex: 999999,
     borderTopLeftRadius: 18,
     borderBottomLeftRadius: 18,
     display: "flex",

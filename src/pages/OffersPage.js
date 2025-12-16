@@ -3,6 +3,7 @@ import axios from 'axios';
 import ProductCard from '../components/ProductCard';
 import Loader from "../components/Loader";
 import { toast } from 'react-toastify';
+import Footer from '../components/Footer';
 
 
 function OffersPage() {
@@ -143,6 +144,8 @@ function OffersPage() {
           ))
         )}
       </div>
+
+      <Footer />
     </div>
   );
 }

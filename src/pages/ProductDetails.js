@@ -9,6 +9,7 @@ import axios from 'axios';
 import { CartContext } from '../context/CartContext';
 import { MdShoppingCartCheckout } from "react-icons/md";
 import ProductCard from '../components/ProductCard';
+import Footer from '../components/Footer';
 import Loader from "../components/Loader";
 
 
@@ -853,6 +854,7 @@ padding: 0;
 
 
 
+<Footer />
     </div>
     
   );

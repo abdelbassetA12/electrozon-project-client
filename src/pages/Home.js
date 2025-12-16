@@ -18,7 +18,7 @@ import { toast } from 'react-toastify';
 
 
 
-import {  FaLinkedin, FaGithub, FaInstagram,  FaArrowUp, FaArrowRight, FaYoutube,FaCheckCircle, FaTruck, FaAward, FaCreditCard, FaTag, FaCogs } from "react-icons/fa";
+import {  FaLinkedin, FaGithub, FaInstagram,FaFacebook,  FaArrowUp, FaArrowRight, FaYoutube, FaTruck, FaAward, FaCreditCard, FaTag, FaCogs } from "react-icons/fa";
 import { SiUpwork } from "react-icons/si";
 
 
@@ -292,7 +292,7 @@ grid-column: 1 / -1;
          <div className="scrept-baner slide-up ">
            <h4>Hello, how are you?</h4>
        
-           <h1>Here, you'll find everything you need— from exceptional products to unmatched services.</h1>
+           <h1>Discover premium products and outstanding services, carefully selected to deliver the best shopping experience.</h1>
           
 
  
@@ -301,7 +301,7 @@ grid-column: 1 / -1;
            
          
          <div>
-           <h4>Follow me on</h4>
+           <h4>Follow Us on</h4>
  
           <div
    style={{
@@ -333,22 +333,7 @@ grid-column: 1 / -1;
      <FaLinkedin />
    </a>
  
-   <a
-     href="https://github.com/abdelbassetA12"
-     target="_blank"
-     rel="noreferrer"
-     style={{ color: "#444", transition: "all 0.3s ease" }}
-     onMouseEnter={(e) => {
-       e.currentTarget.style.color = "#000";
-       e.currentTarget.style.transform = "scale(1.2)";
-     }}
-     onMouseLeave={(e) => {
-       e.currentTarget.style.color = "#444";
-       e.currentTarget.style.transform = "scale(1)";
-     }}
-   >
-     <FaGithub />
-   </a>
+  
  
    <a
      href="https://www.instagram.com/abdelbasset_eh?igsh=MWc5Z3Azbnh3ZnhodA=="
@@ -366,40 +351,24 @@ grid-column: 1 / -1;
    >
      <FaInstagram />
    </a>
-   <a
-     href="https://www.youtube.com/@abdelbassetelhajiri"
-     target="_blank"
-     rel="noreferrer"
-     style={{ color: "#444", transition: "all 0.3s ease" }}
-     onMouseEnter={(e) => {
-       e.currentTarget.style.color = "#ff0707ff";
-       e.currentTarget.style.transform = "scale(1.2)";
-     }}
-     onMouseLeave={(e) => {
-       e.currentTarget.style.color = "#444";
-       e.currentTarget.style.transform = "scale(1)";
-     }}
-   >
-    
-     <FaYoutube />
-   </a>
+  
  
    <a
-     href="https://www.upwork.com/freelancers/~016eb755e81c8f3902"
-     target="_blank"
-     rel="noreferrer"
-     style={{ color: "#444", transition: "all 0.3s ease" }}
-     onMouseEnter={(e) => {
-       e.currentTarget.style.color = "#6fda44";
-       e.currentTarget.style.transform = "scale(1.2)";
-     }}
-     onMouseLeave={(e) => {
-       e.currentTarget.style.color = "#444";
-       e.currentTarget.style.transform = "scale(1)";
-     }}
-   >
-     <SiUpwork />
-   </a>
+               href="https://www.facebook.com"
+               target="_blank"
+               rel="noreferrer"
+               style={{ color: "#444", transition: "all 0.3s ease" }}
+               onMouseEnter={(e) => {
+                 e.currentTarget.style.color = "#0077b5";
+                 e.currentTarget.style.transform = "scale(1.2)";
+               }}
+               onMouseLeave={(e) => {
+                 e.currentTarget.style.color = "#444";
+                 e.currentTarget.style.transform = "scale(1)";
+               }}
+             >
+               <FaFacebook />
+             </a>
  
  
  
@@ -430,7 +399,7 @@ grid-column: 1 / -1;
      <div className="empty-state">
   <div className="empty-icon">🛒</div>
   <h3>لا توجد منتجات</h3>
-  <p>لم يتم العثور على منتجات تطابق بحثك أو هذه الفئة</p>
+  <p>لم يتم العثور على منتجات  </p>
 </div>
   )}
          </div>
@@ -452,10 +421,10 @@ grid-column: 1 / -1;
 
 
         {/* Projects Section */}
-       <div className="projects-section  " style={{  overflow: "hidden"}}>
+       <div className="projects-section " style={{  overflow: "hidden"}}>
          <h2  style={{ fontSize: "26px", color: "purple", marginBottom: "40px", display: "flex", justifyContent: "center", alignItems: "center", gap: "10px" }}>Les Promos</h2>
         
-         <div className="projects-grid fade-in">
+         <div className="projects-grid ">
             {offers.length === 0 ? (
  <div className="empty-state">
   <div className="empty-icon">🛒</div>
@@ -538,22 +507,7 @@ grid-column: 1 / -1;
      <FaLinkedin />
    </a>
  
-   <a
-     href="https://github.com/abdelbassetA12"
-     target="_blank"
-     rel="noreferrer"
-     style={{ color: "#444", transition: "all 0.3s ease" }}
-     onMouseEnter={(e) => {
-       e.currentTarget.style.color = "#000";
-       e.currentTarget.style.transform = "scale(1.2)";
-     }}
-     onMouseLeave={(e) => {
-       e.currentTarget.style.color = "#444";
-       e.currentTarget.style.transform = "scale(1)";
-     }}
-   >
-     <FaGithub />
-   </a>
+   
  
    <a
      href="https://www.instagram.com/abdelbasset_eh?igsh=MWc5Z3Azbnh3ZnhodA=="
@@ -571,40 +525,24 @@ grid-column: 1 / -1;
    >
      <FaInstagram />
    </a>
-   <a
-     href="https://www.youtube.com/@abdelbassetelhajiri"
-     target="_blank"
-     rel="noreferrer"
-     style={{ color: "#444", transition: "all 0.3s ease" }}
-     onMouseEnter={(e) => {
-       e.currentTarget.style.color = "#ff0707ff";
-       e.currentTarget.style.transform = "scale(1.2)";
-     }}
-     onMouseLeave={(e) => {
-       e.currentTarget.style.color = "#444";
-       e.currentTarget.style.transform = "scale(1)";
-     }}
-   >
-    
-     <FaYoutube />
-   </a>
+   
  
-   <a
-     href="https://www.upwork.com/freelancers/~016eb755e81c8f3902"
-     target="_blank"
-     rel="noreferrer"
-     style={{ color: "#444", transition: "all 0.3s ease" }}
-     onMouseEnter={(e) => {
-       e.currentTarget.style.color = "#6fda44";
-       e.currentTarget.style.transform = "scale(1.2)";
-     }}
-     onMouseLeave={(e) => {
-       e.currentTarget.style.color = "#444";
-       e.currentTarget.style.transform = "scale(1)";
-     }}
-   >
-     <SiUpwork />
-   </a>
+  <a
+                           href="https://www.facebook.com"
+                           target="_blank"
+                           rel="noreferrer"
+                           style={{ color: "#444", transition: "all 0.3s ease" }}
+                           onMouseEnter={(e) => {
+                             e.currentTarget.style.color = "#0077b5";
+                             e.currentTarget.style.transform = "scale(1.2)";
+                           }}
+                           onMouseLeave={(e) => {
+                             e.currentTarget.style.color = "#444";
+                             e.currentTarget.style.transform = "scale(1)";
+                           }}
+                         >
+                           <FaFacebook />
+                         </a>
  
  
  

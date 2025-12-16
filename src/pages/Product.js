@@ -4,6 +4,7 @@ import ProductCard from '../components/ProductCard';
 import { SearchContext } from '../context/SearchContext';
 import { useLocation } from 'react-router-dom';
 import Loader from "../components/Loader";
+import Footer from '../components/Footer';
 import { toast } from 'react-toastify';
 
 
@@ -144,6 +145,7 @@ grid-column: 1 / -1;
 </div>
         )}
       </div>
+      <Footer />
     </div>
   );
 }

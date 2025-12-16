@@ -6,7 +6,7 @@ import React, { useState } from "react";
 import axios from "axios";
 import { toast } from "react-toastify";
 import Footer from "../components/Footer";
-import {  FaLinkedin, FaGithub, FaInstagram, FaEnvelope, FaGlobe, FaYoutube } from "react-icons/fa";
+import {  FaLinkedin, FaInstagram, FaEnvelope, FaGlobe, FaFacebook } from "react-icons/fa";
 import { SiUpwork } from "react-icons/si";
 
 export default function Contact() {
@@ -89,7 +89,7 @@ export default function Contact() {
         {/* القسم الأيمن: روابط التواصل */}
         <div className=" card about">
           <h2><FaGlobe /> Get in Touch & Follow Me </h2>
-          <p>You can follow and connect with me on the following platforms: </p>
+          <p>You can follow us and contact us through the following platforms:</p>
           
 
 
@@ -122,22 +122,7 @@ export default function Contact() {
             <FaLinkedin />
           </a>
         
-          <a
-            href="https://github.com/abdelbassetA12"
-            target="_blank"
-            rel="noreferrer"
-            style={{ color: "#444", transition: "all 0.3s ease" }}
-            onMouseEnter={(e) => {
-              e.currentTarget.style.color = "#000";
-              e.currentTarget.style.transform = "scale(1.2)";
-            }}
-            onMouseLeave={(e) => {
-              e.currentTarget.style.color = "#444";
-              e.currentTarget.style.transform = "scale(1)";
-            }}
-          >
-            <FaGithub />
-          </a>
+          
         
           <a
             href="https://www.instagram.com/abdelbasset_eh?igsh=MWc5Z3Azbnh3ZnhodA=="
@@ -157,38 +142,23 @@ export default function Contact() {
           </a>
 
           <a
-            href="https://www.youtube.com/@abdelbassetelhajiri"
-            target="_blank"
-            rel="noreferrer"
-            style={{ color: "#444", transition: "all 0.3s ease" }}
-            onMouseEnter={(e) => {
-              e.currentTarget.style.color = "#ff0707ff";
-              e.currentTarget.style.transform = "scale(1.2)";
-            }}
-            onMouseLeave={(e) => {
-              e.currentTarget.style.color = "#444";
-              e.currentTarget.style.transform = "scale(1)";
-            }}
-          >
-            <FaYoutube />
-          </a>
+                                   href="https://www.facebook.com"
+                                   target="_blank"
+                                   rel="noreferrer"
+                                   style={{ color: "#444", transition: "all 0.3s ease" }}
+                                   onMouseEnter={(e) => {
+                                     e.currentTarget.style.color = "#0077b5";
+                                     e.currentTarget.style.transform = "scale(1.2)";
+                                   }}
+                                   onMouseLeave={(e) => {
+                                     e.currentTarget.style.color = "#444";
+                                     e.currentTarget.style.transform = "scale(1)";
+                                   }}
+                                 >
+                                   <FaFacebook />
+                                 </a>
         
-          <a
-            href="https://www.upwork.com/freelancers/~016eb755e81c8f3902"
-            target="_blank"
-            rel="noreferrer"
-            style={{ color: "#444", transition: "all 0.3s ease" }}
-            onMouseEnter={(e) => {
-              e.currentTarget.style.color = "#6fda44";
-              e.currentTarget.style.transform = "scale(1.2)";
-            }}
-            onMouseLeave={(e) => {
-              e.currentTarget.style.color = "#444";
-              e.currentTarget.style.transform = "scale(1)";
-            }}
-          >
-            <SiUpwork />
-          </a>
+        
         </div>
         </div>
 
