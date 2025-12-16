@@ -62,7 +62,14 @@
 
 
 
-
+.logo {
+    margin: 20px;
+    font-size: 1.6rem;
+    font-weight: bold;
+    background: linear-gradient(to right, #00c6ff, #0072ff);
+   
+   
+  }
 
 
 
@@ -82,6 +89,9 @@
 
 /* 🎯 تحسين نسخة الموبايل */
 @media (max-width: 768px) {
+  .logo {
+    margin: 5px 20px;
+  }
 
   .mobile-login, .mobile-register {
     text-align: center;

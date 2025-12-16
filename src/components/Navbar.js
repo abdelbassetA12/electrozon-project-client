@@ -139,7 +139,7 @@ const Navbar = ({ user, onLogout }) => {
                     </div>
 
                   
-      <NavLink to="/" style={styles.logo} onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave}>ElectroZone </NavLink>
+      <NavLink className='logo' to="/" style={styles.logo} onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave}>ElectroZone </NavLink>
      
 
 
@@ -390,10 +390,7 @@ const styles = {
     boxShadow: '0 1px 5px rgba(0,0,0,0.1)',
   },
   logo: {
-    margin: "20px",
-    fontSize: '1.6rem',
-    fontWeight: 'bold',
-    background: 'linear-gradient(to right, #00c6ff, #0072ff)',
+    
     WebkitBackgroundClip: 'text',
     WebkitTextFillColor: 'transparent',
   },
